@@ -4,7 +4,7 @@
     <title>Registration</title>
     <br>
     <link rel="stylesheet" href="style.css">
-    <br action="{{route("register_process")}}" method="POST">
+    <form action="{{route("register_process")}}" method="POST">
         @csrf
     <div class="container">
         <h1>Register</h1>
@@ -34,6 +34,7 @@
             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
         </div>
         </div>
+    </form>
         <script>
             var myInput = document.getElementById("psw");
             var letter = document.getElementById("letter");
