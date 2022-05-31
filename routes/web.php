@@ -48,3 +48,8 @@ Route::middleware("guest")->group(function () {
 
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
