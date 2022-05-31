@@ -59,7 +59,9 @@
 
             <label>Password : </label>
             <input type="password" placeholder="Enter Password" name="password" required>
-
+            <div>
+                <a href="{{route('forgot')}}" style="position: center;">Forgot Password?</a>
+            </div>
             <button type="submit">Login</button>
 
         </div>
@@ -71,5 +73,5 @@
         </div>
     </form>
     </body>
-    //check
+    //checkk
 @endsection

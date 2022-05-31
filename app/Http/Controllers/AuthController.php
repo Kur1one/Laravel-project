@@ -32,6 +32,30 @@ class AuthController extends Controller
         return view('pages.registration');
     }
 
+    public function ShowForgotForm(){
+        return view('pages.forgot');
+    }
+
+    public function forgot(Request $request) {
+        $data = $request->validate([
+            "name" => ["required", "string"],
+            "email" => ["required", "email", "string", "unique:users,email"],
+            "password" => ["required", "confirmed"]
+        ]);
+
+        $user = User::create([
+            "name" => $data["name"],
+            "email" => $data["email"],
+            "password" => bcrypt($data["password"])
+        ]);
+
+        if($user) {
+            auth("web")->login($user);
+        }
+
+        return redirect(route("home"));
+    }
+
     public function register(Request $request) {
         $data = $request->validate([
             "name" => ["required", "string"],
