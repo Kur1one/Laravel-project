@@ -23,7 +23,7 @@ class Pagescontroller extends Controller
         $order = [
             'title' => 'Order'
         ];
-        return view('pages.about')->with($order);
+        return view('pages.order')->with($order);
     }
 
     public function services(): string {
