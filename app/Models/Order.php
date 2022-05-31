@@ -1,15 +1,17 @@
 <?php
 
 namespace App\Models;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    protected $data = [
-        'price',
-        'listOfProducts',
-        'userID'
-    ];
+    use HasFactory;
+    protected $fillable = [
+        "price",
+        "order",
+        "email",
 
+    ];
 }
