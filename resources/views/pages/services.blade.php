@@ -28,7 +28,7 @@
             </p>
         </div>
         @auth("web")
-            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}" style="">Order</a>
+        <center><a style="width: 100px" type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}" style="">Order</a></center>
         @endauth
     </div>
 
@@ -37,12 +37,14 @@
         <div class="row">
             <div class="col-sm">
                 We will help your business to grow up in digital area by using of modern tools, such as target advertising
-                </p>
             </div>
+            </p>
         </div>
+        <div >
         @auth("web")
-            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+            <center><a style="width: 100px" type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a></center>
         @endauth
+        </div>
     </div>
 
     <div id="Production" class="tabcontent">
@@ -60,7 +62,7 @@
             </p>
         </div>
         @auth("web")
-            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        <center><a style="width: 100px" type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a></center>
         @endauth
     </div>
 
@@ -73,7 +75,7 @@
             </div>
         </div>
         @auth("web")
-            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        <center><a style="width: 100px" type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a></center>
         @endauth
     </div>
 
@@ -92,7 +94,7 @@
             </p>
         </div>
         @auth("web")
-            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+            <center><a style="width: 100px" type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a></center>
         @endauth
     </div>
 
