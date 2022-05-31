@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <title>Login</title>
+    <title>Forgot Password</title>
     <style>
         h1{
             color: white;
@@ -50,28 +50,22 @@
     </style>
     <body>
     <br>
-    <form method="POST" action="{{route("login_process")}}">
+    <form method="POST" action="{{route("forgot_process")}}">
         @csrf
         <div class="container">
             <label> Email :
             </label>
             <input type="text" placeholder="Enter Email" name="email" required>
 
-            <label>Password : </label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <div>
-                <a href="{{route('forgot')}}" style="position: center;">Forgot Password?</a>
-            </div>
-            <button type="submit">Login</button>
+
+            <button type="submit">Send new Password</button>
 
         </div>
+        <br></br>
         <br></br>
 
         <div class="reg">
             <p>Not registered yet? <a href="http://localhost/B/public/registration">Register</a>.</p>
-        </div>
-        <div class="reg">
-            <p>Go to admin panel <a href="http://localhost:8000/admin/login">Admin panel</a>.</p>
         </div>
     </form>
     </body>
