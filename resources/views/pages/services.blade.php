@@ -27,6 +27,7 @@
             </div>
             </p>
         </div>
+        <button type="submit">Login</button>
     </div>
 
     <div id="SMM" class="tabcontent">
@@ -37,6 +38,7 @@
                 </p>
             </div>
         </div>
+        <button type="submit">Login</button>
     </div>
 
     <div id="Production" class="tabcontent">
@@ -53,6 +55,7 @@
             </div>
             </p>
         </div>
+        <button type="submit">Login</button>
     </div>
 
     <div id="Branding" class="tabcontent">
@@ -61,17 +64,9 @@
             <div class="col-sm">
                 Creating logo, making design and your own style for your business or product
                 </p>
-                <script>
-                    document.p.onload = showpar();
-                    function showpar(){
-                        var newP = document.createElement("p");
-                        var text = document.createTextNode("AJJAJAJ");
-                        newP.appendChild(text);
-                        document.body.appendChild(newP);
-                    }
-                </script>
             </div>
         </div>
+        <button type="submit">Login</button>
     </div>
 
     <div id="Motion Design" class="tabcontent">
@@ -88,6 +83,7 @@
             </div>
             </p>
         </div>
+        <button type="submit">Login</button>
     </div>
 
     <script>
