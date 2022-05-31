@@ -69,7 +69,7 @@
         <br></br>
 
         <div class="reg">
-            <p>Not registered yet? <a href="http://localhost/B/public/registration">Sign in</a>.</p>
+            <p>Not registered yet? <a href="http://localhost/B/public/registration">Register</a>.</p>
         </div>
     </form>
     </body>

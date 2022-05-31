@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use function Ramsey\Uuid\v1;
 
 class Pagescontroller extends Controller
 {
@@ -16,6 +17,13 @@ class Pagescontroller extends Controller
             'title' => 'About us'
         ];
         return view('pages.about')->with($tit);
+    }
+
+    public function order(): string {
+        $order = [
+            'title' => 'Order'
+        ];
+        return view('pages.order')->with($order);
     }
 
     public function services(): string {
@@ -52,5 +60,6 @@ class Pagescontroller extends Controller
         ];
         return view('pages.ourlocation')->with($org);
     }
+
 
 }

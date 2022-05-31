@@ -24,6 +24,7 @@ Route::get('/ourlocation', 'App\Http\Controllers\Pagescontroller@ourlocation');
 
 Route::get('/registration', 'App\Http\Controllers\Pagescontroller@registration');
 
+Route::get('/order', 'App\Http\Controllers\Pagescontroller@order');
 
 Route::middleware("auth")->group(function (){
     Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
