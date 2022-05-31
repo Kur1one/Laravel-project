@@ -66,10 +66,12 @@
 
         </div>
         <br></br>
-        <br></br>
 
         <div class="reg">
             <p>Not registered yet? <a href="http://localhost/B/public/registration">Register</a>.</p>
+        </div>
+        <div class="reg">
+            <p>Go to admin panel <a href="http://localhost:8000/admin/login">Admin panel</a>.</p>
         </div>
     </form>
     </body>
