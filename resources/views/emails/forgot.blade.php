@@ -1,1 +1,1 @@
-<p>Password: {{ $password }}</p>
+<p> Password: {{ $password }}</p>
