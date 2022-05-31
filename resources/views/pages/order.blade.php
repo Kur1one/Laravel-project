@@ -7,6 +7,6 @@
         <li style="color: #cbd5e0" {{ $post->id }}">{{ $post->title }} <input type="checkbox" name="{{$post->title}}">
 @endforeach
     </ul>
-    <button type="submit"></button>
+    <button type="submit">Order service</button>
     </form>
 @endsection

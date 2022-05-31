@@ -73,6 +73,6 @@ class AuthController extends Controller
             auth("web")->login($user);
         }
 
-        return redirect(route("home"));
+        return redirect(route("home"))->with('msg', 'Your order have successfully added');
     }
 }

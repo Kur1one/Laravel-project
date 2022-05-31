@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/order',     [\App\Http\Controllers\PostController::class, 'index'])->name("Order");
+
 Route::get('/', 'App\Http\Controllers\Pagescontroller@index');
 
 Route::get('/about', 'App\Http\Controllers\Pagescontroller@about');
@@ -29,6 +29,10 @@ Route::get('/registration', 'App\Http\Controllers\Pagescontroller@registration')
 
 Route::middleware("auth")->group(function (){
     Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
+
+    Route::get('/order', [\App\Http\Controllers\OrderController::class, 'ShowOrderForm'])->name('order');
+
+    Route::post('/order_process', [\App\Http\Controllers\OrderController::class, 'order'])->name('order_process');
 });
 
 Route::middleware("guest")->group(function () {
@@ -46,6 +50,12 @@ Route::middleware("guest")->group(function () {
 
     Route::post('/forgot_process', [\App\Http\Controllers\AuthController::class, 'forgot'])->name('forgot_process');
 });
+
+Route::get('/order', [\App\Http\Controllers\OrderController::class, 'ShowOrderForm'])->name('order');
+
+Route::post('/order_process', [\App\Http\Controllers\OrderController::class, 'order'])->name('order_process');
+
+
 
 
 

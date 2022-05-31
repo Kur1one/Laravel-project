@@ -27,7 +27,9 @@
             </div>
             </p>
         </div>
-        <button type="submit">Login</button>
+        @auth("web")
+            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}" style="">Order</a>
+        @endauth
     </div>
 
     <div id="SMM" class="tabcontent">
@@ -38,7 +40,9 @@
                 </p>
             </div>
         </div>
-        <button type="submit">Login</button>
+        @auth("web")
+            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        @endauth
     </div>
 
     <div id="Production" class="tabcontent">
@@ -55,7 +59,9 @@
             </div>
             </p>
         </div>
-        <button type="submit">Login</button>
+        @auth("web")
+            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        @endauth
     </div>
 
     <div id="Branding" class="tabcontent">
@@ -66,7 +72,9 @@
                 </p>
             </div>
         </div>
-        <button type="submit">Login</button>
+        @auth("web")
+            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        @endauth
     </div>
 
     <div id="Motion Design" class="tabcontent">
@@ -83,7 +91,9 @@
             </div>
             </p>
         </div>
-        <button type="submit">Login</button>
+        @auth("web")
+            <a type="submit" class="musicstart" id="registerbtn" href="{{route("order")}}">Order</a>
+        @endauth
     </div>
 
     <script>
