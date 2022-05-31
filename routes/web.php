@@ -36,7 +36,4 @@ Route::get('/registration', [\App\Http\Controllers\AuthController::class, 'ShowR
 
 Route::post('/register_process', [\App\Http\Controllers\AuthController::class, 'register'])->name('register_process');
 
-
-
-
-
+Route::post('/placingOrder', [\App\Http\Controllers\OrderController::class, 'putOrder'])->name('placingOrder');
